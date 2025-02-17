@@ -15,18 +15,6 @@ public class UserService implements UserDetailsService {
     private final UserRepository userRepository;
     private final PasswordEncoder passwordEncoder;
 
-//    public User registerUser(String username, String password) {
-//        if (userRepository.findByUsername(username).isPresent()) {
-//            throw new IllegalStateException("Username already exists.");
-//        }
-//
-//        User newUser = new User();
-//        newUser.setUsername(username);
-//        newUser.setPassword(passwordEncoder.encode(password));
-//        newUser.setRole(com.library.librarySystem.model.Role.USER);
-//        return userRepository.save(newUser);
-//    }
-
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         User user = userRepository.findByUsername(username)

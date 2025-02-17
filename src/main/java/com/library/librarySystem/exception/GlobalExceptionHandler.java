@@ -44,10 +44,3 @@ public class GlobalExceptionHandler {
         return ResponseEntity.status(HttpStatus.CONFLICT).body(ex.getMessage());
     }
 }
-//
-//    @ExceptionHandler(TransactionSystemException.class)
-//    public ResponseEntity<String> handleTransactionException(TransactionSystemException ex) {
-//        return ResponseEntity.status(HttpStatus.BAD_REQUEST)
-//                .body("Transaction failed due to invalid data. Please check your request.");
-//    }
-//}
