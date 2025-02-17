@@ -152,9 +152,6 @@ The application **uses Redis** to cache frequently accessed data, such as book a
 2. Install Redis Insight from microsoft store:
 
 3. Choose Redis Insight DB `127.0.0.1:6379`.
-
-### **Example Cached Methods in `BookServiceImp`**:
-
 **🔧 Redis must be running**:
 ```sh
 redis-server
