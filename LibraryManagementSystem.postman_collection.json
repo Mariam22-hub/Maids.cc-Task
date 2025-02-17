@@ -1,0 +1,256 @@
+{
+	"info": {
+		"_postman_id": "b7140c87-a894-4c67-85a0-a69e6894fa2c",
+		"name": "LibraryManagementSystem",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "25071602"
+	},
+	"item": [
+		{
+			"name": "Get All books",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTczOTgyNTg0NywiZXhwIjoxNzM5OTEyMjQ3fQ.M-C4dwQ3QQHibJH-3v090moQLo2GVbSQEryIHk4znMc"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/api/books"
+			},
+			"response": []
+		},
+		{
+			"name": "Get book by id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTczOTgyNTg0NywiZXhwIjoxNzM5OTEyMjQ3fQ.M-C4dwQ3QQHibJH-3v090moQLo2GVbSQEryIHk4znMc"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/api/books/8"
+			},
+			"response": []
+		},
+		{
+			"name": "Create a new book",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTczOTgyNTg0NywiZXhwIjoxNzM5OTEyMjQ3fQ.M-C4dwQ3QQHibJH-3v090moQLo2GVbSQEryIHk4znMc"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Clean Code\",\r\n  \"author\": \"Robert C. Martin\",\r\n  \"isbn\": \"9780134350884\",\r\n  \"publicationYear\": 2008,\r\n  \"available\": true,\r\n  \"genre\": \"classic\",\r\n  \"pageCount\": 20\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/books"
+			},
+			"response": []
+		},
+		{
+			"name": "Update a book by id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTczOTgyNTg0NywiZXhwIjoxNzM5OTEyMjQ3fQ.M-C4dwQ3QQHibJH-3v090moQLo2GVbSQEryIHk4znMc"
+					}
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Clean Code\",\r\n  \"author\": \"Robert C. Martin\",\r\n  \"publicationYear\": 2005,\r\n  \"genre\": \"classic\",\r\n  \"pageCount\": 20\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/books/8"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a book by id",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8080/api/books/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Get all patrons",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTczOTgyNTg0NywiZXhwIjoxNzM5OTEyMjQ3fQ.M-C4dwQ3QQHibJH-3v090moQLo2GVbSQEryIHk4znMc"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/api/patrons"
+			},
+			"response": []
+		},
+		{
+			"name": "Get a patron by id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTczOTgyNTg0NywiZXhwIjoxNzM5OTEyMjQ3fQ.M-C4dwQ3QQHibJH-3v090moQLo2GVbSQEryIHk4znMc"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/api/patrons/8"
+			},
+			"response": []
+		},
+		{
+			"name": "Create a patron",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTczOTgyNTg0NywiZXhwIjoxNzM5OTEyMjQ3fQ.M-C4dwQ3QQHibJH-3v090moQLo2GVbSQEryIHk4znMc"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Charlie Brown\",\r\n  \"email\": \"charlie3@example.com\",\r\n  \"phone\": \"1234567890\",\r\n  \"address\": \"123 Library Street\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/patrons"
+			},
+			"response": []
+		},
+		{
+			"name": "Update a patron by id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTczOTgyNTg0NywiZXhwIjoxNzM5OTEyMjQ3fQ.M-C4dwQ3QQHibJH-3v090moQLo2GVbSQEryIHk4znMc"
+					}
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Charlie Brown (Updated2)\",\r\n  \"email\": \"charlie@example.com\",\r\n  \"phone\": \"9876543210\",\r\n  \"address\": \"456 Updated Street\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/patrons/8"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a patron by id",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8080/api/patrons/2"
+			},
+			"response": []
+		},
+		{
+			"name": "Borrow a book",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"url": "http://localhost:8080/api/borrow/2/patron/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Return a book",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"url": "http://localhost:8080/api/return/2/patron/1"
+			},
+			"response": []
+		},
+		{
+			"name": "SignUp",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{  \"username\": \"admin2\",\r\n  \"password\": \"password\",\r\n  \"role\": \"USER\"\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/auth/signup"
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{  \"username\": \"admin\",\r\n  \"password\": \"password\"\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/auth/login"
+			},
+			"response": []
+		}
+	]
+}
